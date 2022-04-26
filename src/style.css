@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #4f4f4f;
+  font-size: 18px;
+}
+
+.header {
+  padding: 30px 0 50px 0;
+  border-bottom: 1px solid #d0cdcd;
+}
+
+.header h3 {
+  float: left;
+  margin-left: 20px;
+}
+
+.refresh {
+  float: right;
+  margin-right: 20px;
+}
+
+.wrapper {
+  max-width: 60%;
+  margin: 80px auto;
+  box-shadow: #d0cdcd -1px -4px 12px 0px;
+}
+
+#to-do-list {
+  padding: 20px 0 0 0;
+}
+
+#to-do-list div {
+  padding: 20px;
+  border-bottom: 1px solid #d0cdcd;
+}
+
+#to-do-list div:nth-child(1) {
+  padding: 0;
+}
+
+#to-do-list div:last-child {
+  padding: 0;
+  border-bottom: none
+}
+
+input[type=text] {
+  width: 95%;
+  border: none;
+  padding: 10px;
+  margin: 0 20px 10px 20px;
+}
+
+input::placeholder {
+  font-style: italic;
+  color: #d0cdcd;
+}
+
+input[type="checkbox" i] {
+  border-radius: 0;
+  margin-right: 10px;
+}
+
+.more_vert {
+  float: right;
+}
+
+input[type=button] {
+  border: none;
+  background: #e8e6e6;
+  padding: 20px;
+  width: 100%;
+  color: #8c8a8a;
+}
