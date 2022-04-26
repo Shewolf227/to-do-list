@@ -27,7 +27,7 @@
 .wrapper {
   max-width: 60%;
   margin: 80px auto;
-  box-shadow: #d0cdcd -1px -4px 12px 0px;
+  box-shadow: #d0cdcd -1px -4px 12px 0;
 }
 
 #to-do-list {
@@ -45,7 +45,7 @@
 
 #to-do-list div:last-child {
   padding: 0;
-  border-bottom: none
+  border-bottom: none;
 }
 
 input[type=text] {
