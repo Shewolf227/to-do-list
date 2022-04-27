@@ -7,6 +7,13 @@
   font-family: 'Roboto', sans-serif;
   color: #4f4f4f;
   font-size: 18px;
+  overflow: hidden;
+}
+
+.top {
+  position: sticky;
+  top: 0;
+  background: #fff;
 }
 
 .header {
@@ -22,16 +29,15 @@
 .refresh {
   float: right;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .wrapper {
   max-width: 60%;
-  margin: 80px auto;
+  margin: 30px auto;
   box-shadow: #d0cdcd -1px -4px 12px 0;
-}
-
-#to-do-list {
-  padding: 20px 0 0 0;
+  max-height: 700px;
+  overflow: scroll;
 }
 
 #to-do-list div {
@@ -39,34 +45,31 @@
   border-bottom: 1px solid #d0cdcd;
 }
 
-#to-do-list div:nth-child(1) {
-  padding: 0;
+#add-item {
+  width: 100%;
+  border: none;
+  padding: 25px;
+  border-bottom: 1px solid #d0cdcd;
 }
 
-#to-do-list div:last-child {
-  padding: 0;
-  border-bottom: none;
-}
-
-input[type=text] {
-  width: 95%;
+.item-desc {
   border: none;
   padding: 10px;
-  margin: 0 20px 10px 20px;
 }
 
-input::placeholder {
+#add-item::placeholder {
   font-style: italic;
   color: #d0cdcd;
 }
 
 input[type="checkbox" i] {
-  border-radius: 0;
   margin-right: 10px;
 }
 
-.more_vert {
+.delete {
   float: right;
+  cursor: pointer;
+  color: red;
 }
 
 input[type=button] {
@@ -75,4 +78,6 @@ input[type=button] {
   padding: 20px;
   width: 100%;
   color: #8c8a8a;
+  position: sticky;
+  bottom: 0;
 }
