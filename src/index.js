@@ -1,6 +1,7 @@
 import './style.css';
 import { createList } from '../modules/createTask.js';
 import { addItem } from '../modules/add.js';
+import clearAll from '../modules/clearCompleted.js';
 
 let tasks = [];
 
@@ -13,3 +14,4 @@ const getLocalStorageData = () => {
 getLocalStorageData();
 createList(tasks);
 addItem(tasks);
+clearAll(tasks);
