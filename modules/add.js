@@ -1,9 +1,10 @@
+/* eslint-disable import/prefer-default-export */
 import { createList } from './createTask.js';
 
 export const addItem = (items) => {
   const addNewInput = document.getElementById('add-item');
   addNewInput.addEventListener('keypress', (e) => {
-    if (e.key === "Enter") {
+    if (e.key === 'Enter') {
       const newItem = {
         description: addNewInput.value,
         completed: false,

@@ -1,3 +1,5 @@
+/* eslint-disable import/no-cycle */
+/* eslint-disable import/prefer-default-export */
 import remove from './delete.js';
 import checker from './completedTasks.js';
 import change from './editTask.js';
@@ -20,7 +22,7 @@ export const createList = (items) => {
     if (item.completed) {
       checked = ' checked';
     }
-    
+
     editedTasks += `<div class="item${checked}"><input class="checkbox" value="${item.index}" type="checkbox"${checked}><input class="item-desc" title="Click task to edit it" type="text" value="${item.description}"><i class="material-icons delete"  title="Delete">delete</i></div>`;
   });
   const list = document.getElementById('to-do-list');
